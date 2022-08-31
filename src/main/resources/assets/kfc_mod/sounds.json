@@ -1,0 +1,11 @@
+{
+  "sharinagan_sound_effect": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "kfc_mod:sharinagan_sound_effect",
+        "stream": false
+      }
+    ]
+  }
+}

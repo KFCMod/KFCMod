@@ -1,0 +1,20 @@
+{
+  "_fv": 33,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 1,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "Items.COOKED_CHICKEN"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Tenders"
+    },
+    "name": "ezrg",
+    "namespace": "mod"
+  }
+}

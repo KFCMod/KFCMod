@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:paper"
+    },
+    "2": {
+      "item": "minecraft:paper"
+    },
+    "4": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "kfc_mod:sachet",
+    "count": 1
+  }
+}

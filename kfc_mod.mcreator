@@ -1,0 +1,212 @@
+{
+  "mod_elements": [
+    {
+      "name": "Bucketoftenders",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bucketoftenders"
+    },
+    {
+      "name": "Pepsi",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepsi"
+    },
+    {
+      "name": "Chips",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chips"
+    },
+    {
+      "name": "Tenders",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tenders"
+    },
+    {
+      "name": "Kfc",
+      "type": "structure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfc"
+    },
+    {
+      "name": "Pepsimeilleurquecoca",
+      "type": "fluid",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pepsimeilleurquecoca",
+      "metadata": {
+        "gb": true
+      }
+    },
+    {
+      "name": "Sachet",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sachet"
+    },
+    {
+      "name": "Shachetcarft",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shachetcarft"
+    },
+    {
+      "name": "Frite",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frite"
+    },
+    {
+      "name": "Rg",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rg"
+    },
+    {
+      "name": "Ergh",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ergh"
+    },
+    {
+      "name": "Ezrg",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ezrg"
+    },
+    {
+      "name": "Ehtz",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ehtz"
+    },
+    {
+      "name": "EQRGUHEUIRHQRGEIHUZRGHIJEZATREHTIRGEUHTREHTIRG",
+      "type": "livingentity",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg"
+    },
+    {
+      "name": "Veagfrzrhz",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "veagfrzrhz",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "sharinagan_sound_effect",
+      "files": [
+        "sharinagan_sound_effect"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.eye_mod.sachet": "Sachet",
+      "item.eye_mod.bucketoftenders": "Bucketoftenders",
+      "block.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.eye_mod.tenders": "Tenders",
+      "item.kfc_mod.tenders": "Tenders",
+      "item.kfc_mod.sachet": "Sachet",
+      "subtitles.sharinagan_sound_effect": "",
+      "item.kfc_mod.pepsimeilleurquecoca_bucket": "Pepsimeilleurquecoca Bucket",
+      "entity.eye_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg": "PEPSI-MAN",
+      "item.eye_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg_spawn_egg": "PEPSI-MAN Spawn Egg",
+      "item.eye_mod.pepsi": "Pepsi",
+      "item.eye_mod.chips": "Chips",
+      "item.eye_mod.pepsimeilleurquecoca_bucket": "Pepsimeilleurquecoca Bucket",
+      "fluid.eye_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "entity.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg": "PEPSI-MAN",
+      "item.eye_mod.frite": "Frite",
+      "item.kfc_mod.frite": "Frite",
+      "fluid.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg_spawn_egg": "PEPSI-MAN Spawn Egg",
+      "item.kfc_mod.bucketoftenders": "Bucketoftenders",
+      "block.eye_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.kfc_mod.pepsi": "Pepsi",
+      "item.kfc_mod.chips": "Chips"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "kfc_mod",
+    "modName": "kfc_mod",
+    "version": "1.0.0",
+    "author": "Utilisateur, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.eyemod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200234517
+}

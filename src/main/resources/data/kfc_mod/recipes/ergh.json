@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    }
+  ],
+  "result": {
+    "item": "kfc_mod:bucketoftenders",
+    "count": 1
+  }
+}

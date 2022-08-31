@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kfc_mod:items/telechargement-_2_-removebg-preview"
+  }
+}

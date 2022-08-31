@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 1,
+  "cookingtime": 1,
+  "ingredient": {
+    "item": "minecraft:cooked_chicken"
+  },
+  "result": {
+    "item": "kfc_mod:tenders"
+  }
+}
