@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bread"
+    },
+    "1": {
+      "item": "minecraft:bread"
+    },
+    "2": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "item": "kfc_mod:painbur",
+    "count": 1
+  }
+}

@@ -1,8 +1,6 @@
 package net.mcreator.eyemod.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
@@ -14,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.eyemod.item.TournesolhuileItem;
@@ -114,31 +113,6 @@ public class FriteseProcedure {
 				return ItemStack.EMPTY;
 			}
 		}.getItemStack((int) (2))).getItem() == FriteItem.block)) {
-			{
-				final ItemStack _setstack = new ItemStack(FriteItem.block);
-				final int _sltid = (int) (2);
-				_setstack.setCount((int) (new Object() {
-					public int getAmount(int sltid) {
-						if (entity instanceof ServerPlayerEntity) {
-							Container _current = ((ServerPlayerEntity) entity).openContainer;
-							if (_current instanceof Supplier) {
-								Object invobj = ((Supplier) _current).get();
-								if (invobj instanceof Map) {
-									ItemStack stack = ((Slot) ((Map) invobj).get(sltid)).getStack();;
-									if (stack != null)
-										return stack.getCount();
-								}
-							}
-						}
-						return 0;
-					}
-				}.getAmount((int) (2)) + 2));
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-					if (capability instanceof IItemHandlerModifiable) {
-						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
-					}
-				});
-			}
 			if (world instanceof World && !world.isRemote()) {
 				((World) world).playSound(null, new BlockPos(x, y, z),
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("kfc_mod:friuteuse")),
@@ -147,6 +121,18 @@ public class FriteseProcedure {
 				((World) world).playSound(x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("kfc_mod:friuteuse")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+			}
+			if (entity instanceof PlayerEntity) {
+				Container _current = ((PlayerEntity) entity).openContainer;
+				if (_current instanceof Supplier) {
+					Object invobj = ((Supplier) _current).get();
+					if (invobj instanceof Map) {
+						ItemStack _setstack = new ItemStack(FriteItem.block);
+						_setstack.setCount((int) 1);
+						((Slot) ((Map) invobj).get((int) (2))).putStack(_setstack);
+						_current.detectAndSendChanges();
+					}
+				}
 			}
 		}
 	}

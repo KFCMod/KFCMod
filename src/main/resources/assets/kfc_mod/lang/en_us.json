@@ -1,5 +1,6 @@
 {
   "item.eye_mod.bucketoftenders": "Bucketoftenders",
+  "item.kfc_mod.cheddarrrrrrr": "Cheddarrrrrrr",
   "item.eye_mod.tenders": "Tenders",
   "block.kfc_mod.friteuse": "Friteuse",
   "item.kfc_mod.sachet": "Sachet",
@@ -19,10 +20,14 @@
   "item.eye_mod.sachet": "Sachet",
   "block.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
   "item.kfc_mod.tenders": "Tenders",
+  "item.kfc_mod.salade": "Salade",
+  "item.kfc_mod.colonel": "Colonel",
   "item.eye_mod.frite": "Frite",
   "fluid.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+  "item.kfc_mod.painbur": "Painbur",
   "item.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg_spawn_egg": "PEPSI-MAN Spawn Egg",
   "subtitles.friuteuse": "",
   "item.kfc_mod.pepsi": "Pepsi",
-  "item.kfc_mod.chips": "Chips"
+  "item.kfc_mod.chips": "Chips",
+  "biome.kfc_mod.kfcmamaene": "Kfcmamene"
 }

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:painbur"
+    },
+    {
+      "item": "kfc_mod:cheddarrrrrrr"
+    },
+    {
+      "item": "kfc_mod:salade"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:tenders"
+    },
+    {
+      "item": "kfc_mod:painbur"
+    },
+    {
+      "item": "kfc_mod:cheddarrrrrrr"
+    }
+  ],
+  "result": {
+    "item": "kfc_mod:colonel",
+    "count": 1
+  }
+}
