@@ -48,6 +48,7 @@ public class KfcModModElements {
 	public KfcModModElements() {
 		sounds.put(new ResourceLocation("kfc_mod", "sharinagan_sound_effect"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("kfc_mod", "sharinagan_sound_effect")));
+		sounds.put(new ResourceLocation("kfc_mod", "friuteuse"), new net.minecraft.util.SoundEvent(new ResourceLocation("kfc_mod", "friuteuse")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("kfc_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

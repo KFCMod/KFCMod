@@ -7,5 +7,14 @@
         "stream": false
       }
     ]
+  },
+  "friuteuse": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "kfc_mod:deep-fryer-sound-effect-fixed",
+        "stream": false
+      }
+    ]
   }
 }

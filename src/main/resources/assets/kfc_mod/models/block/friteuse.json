@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "kfc_mod:blocks/water",
+    "up": "kfc_mod:blocks/water_-_copie",
+    "north": "kfc_mod:blocks/tr",
+    "east": "kfc_mod:blocks/tr",
+    "south": "kfc_mod:blocks/tr",
+    "west": "kfc_mod:blocks/tr",
+    "particle": "kfc_mod:blocks/water"
+  }
+}

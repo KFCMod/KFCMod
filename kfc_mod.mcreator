@@ -146,6 +146,70 @@
           }
         ]
       }
+    },
+    {
+      "name": "Friteuse",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friteuse"
+    },
+    {
+      "name": "Friteusegui",
+      "type": "gui",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friteusegui"
+    },
+    {
+      "name": "Fritese",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fritese",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tournesolhuile",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tournesolhuile"
+    },
+    {
+      "name": "Caca",
+      "type": "recipe",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caca"
     }
   ],
   "variable_elements": [],
@@ -157,15 +221,21 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "friuteuse",
+      "files": [
+        "deep-fryer-sound-effect-fixed"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
-      "item.eye_mod.sachet": "Sachet",
       "item.eye_mod.bucketoftenders": "Bucketoftenders",
-      "block.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
       "item.eye_mod.tenders": "Tenders",
-      "item.kfc_mod.tenders": "Tenders",
+      "block.kfc_mod.friteuse": "Friteuse",
       "item.kfc_mod.sachet": "Sachet",
       "subtitles.sharinagan_sound_effect": "",
       "item.kfc_mod.pepsimeilleurquecoca_bucket": "Pepsimeilleurquecoca Bucket",
@@ -176,12 +246,17 @@
       "item.eye_mod.pepsimeilleurquecoca_bucket": "Pepsimeilleurquecoca Bucket",
       "fluid.eye_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
       "entity.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg": "PEPSI-MAN",
-      "item.eye_mod.frite": "Frite",
       "item.kfc_mod.frite": "Frite",
-      "fluid.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
-      "item.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg_spawn_egg": "PEPSI-MAN Spawn Egg",
+      "item.kfc_mod.tournesolhuile": "Tournesol huile",
       "item.kfc_mod.bucketoftenders": "Bucketoftenders",
       "block.eye_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.eye_mod.sachet": "Sachet",
+      "block.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.kfc_mod.tenders": "Tenders",
+      "item.eye_mod.frite": "Frite",
+      "fluid.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "item.kfc_mod.eqrguheuirhqrgeihuzrghijezatrehtirgeuhtrehtirg_spawn_egg": "PEPSI-MAN Spawn Egg",
+      "subtitles.friuteuse": "",
       "item.kfc_mod.pepsi": "Pepsi",
       "item.kfc_mod.chips": "Chips"
     }
