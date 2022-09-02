@@ -1,12 +1,15 @@
 {
-  "parent": "block/cube",
+  "parent": "kfc_mod:custom/friteuse",
   "textures": {
-    "down": "kfc_mod:blocks/water",
-    "up": "kfc_mod:blocks/water_-_copie",
-    "north": "kfc_mod:blocks/tr",
-    "east": "kfc_mod:blocks/tr",
-    "south": "kfc_mod:blocks/tr",
-    "west": "kfc_mod:blocks/tr",
-    "particle": "kfc_mod:blocks/water"
+    "all": "kfc_mod:blocks/water",
+    "particle": "kfc_mod:blocks/water",
+    "0": "kfc_mod:blocks/middle",
+    "1": "kfc_mod:blocks/top_main",
+    "2": "kfc_mod:blocks/bottommain",
+    "3": "kfc_mod:blocks/middleleft",
+    "4": "kfc_mod:blocks/middleright",
+    "5": "kfc_mod:blocks/topback",
+    "6": "kfc_mod:blocks/bottomright",
+    "7": "kfc_mod:blocks/bottomleft"
   }
 }

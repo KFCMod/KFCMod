@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "middle",
+        "1": "top_main",
+        "2": "bottommain",
+        "3": "middleleft",
+        "4": "middleright",
+        "5": "topback",
+        "6": "bottomright",
+        "7": "bottomleft"
+      },
+      "name": "default"
+    }
+  }
+}

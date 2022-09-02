@@ -80,7 +80,7 @@ public class FriteuseguiGui extends KfcModModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(3);
+			this.internal = new ItemStackHandler(4);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -118,15 +118,17 @@ public class FriteuseguiGui extends KfcModModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 62) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 16, 53) {
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 44) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 133, 44) {
 				@Override
 				public boolean isItemValid(ItemStack stack) {
 					return false;
 				}
 			}));
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 26) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 43, 17) {
+			}));
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 70, 53) {
 			}));
 			int si;
 			int sj;
@@ -153,18 +155,18 @@ public class FriteuseguiGui extends KfcModModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 3) {
-					if (!this.mergeItemStack(itemstack1, 3, this.inventorySlots.size(), true)) {
+				if (index < 4) {
+					if (!this.mergeItemStack(itemstack1, 4, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 3, false)) {
-					if (index < 3 + 27) {
-						if (!this.mergeItemStack(itemstack1, 3 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 4, false)) {
+					if (index < 4 + 27) {
+						if (!this.mergeItemStack(itemstack1, 4 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 3, 3 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 4, 4 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

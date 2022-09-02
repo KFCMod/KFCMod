@@ -53,6 +53,10 @@ public class FriteuseguiGuiWindow extends ContainerScreen<FriteuseguiGui.GuiCont
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
+
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("kfc_mod:textures/screens/bubble0.png"));
+		this.blit(ms, this.guiLeft + 33, this.guiTop + 34, 0, 0, 32, 32, 32, 32);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -72,7 +76,8 @@ public class FriteuseguiGuiWindow extends ContainerScreen<FriteuseguiGui.GuiCont
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "friteuse", 6, 7, -12829636);
+		this.font.drawString(ms, "Friteuse", 6, 7, -12829636);
+		this.font.drawString(ms, "Inventaire", 6, 70, -12829636);
 	}
 
 	@Override

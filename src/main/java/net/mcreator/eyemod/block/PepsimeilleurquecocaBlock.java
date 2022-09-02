@@ -2,6 +2,7 @@
 package net.mcreator.eyemod.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
@@ -30,7 +31,6 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BucketItem;
 import net.minecraft.fluid.Fluid;
@@ -41,6 +41,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.Block;
 
+import net.mcreator.eyemod.itemgroup.KfcModCreativeTabItemGroup;
 import net.mcreator.eyemod.KfcModModElements;
 
 import java.util.Random;
@@ -83,17 +84,16 @@ public class PepsimeilleurquecocaBlock extends KfcModModElements.ModElement {
 				FluidAttributes.builder(new ResourceLocation("kfc_mod:blocks/water"), new ResourceLocation("kfc_mod:blocks/water_-_copie"))
 						.luminosity(0).density(1000).viscosity(1000).temperature(300)
 
-						.rarity(Rarity.COMMON))
-				.explosionResistance(100f)
-
-				.tickRate(5).levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
+						.rarity(Rarity.COMMON).sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("kfc_mod:sharinagan_sound_effect"))))
+				.explosionResistance(100f).canMultiply().tickRate(5).levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket)
+				.block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("pepsimeilleurquecoca");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("pepsimeilleurquecoca_flowing");
 		elements.blocks
 				.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).setLightLevel(s -> 0)) {
 				}.setRegistryName("pepsimeilleurquecoca"));
 		elements.items.add(() -> new BucketItem(still,
-				new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(ItemGroup.MISC).rarity(Rarity.COMMON))
+				new Item.Properties().containerItem(Items.BUCKET).maxStackSize(1).group(KfcModCreativeTabItemGroup.tab).rarity(Rarity.COMMON))
 				.setRegistryName("pepsimeilleurquecoca_bucket"));
 	}
 

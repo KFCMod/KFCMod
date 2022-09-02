@@ -7,7 +7,7 @@
     "textureStill": "water",
     "textureFlowing": "water_-_copie",
     "tintType": "No tint",
-    "canMultiply": false,
+    "canMultiply": true,
     "flowRate": 5,
     "levelDecrease": 1,
     "slopeFindDistance": 4,
@@ -25,10 +25,10 @@
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:KfcModCreativeTab"
     },
     "emptySound": {
-      "value": ""
+      "value": "CUSTOM:sharinagan_sound_effect"
     },
     "rarity": "COMMON",
     "specialInfo": [],

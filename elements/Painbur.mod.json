@@ -8,9 +8,9 @@
     "name": "Painbur",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:KfcModCreativeTab"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

@@ -278,6 +278,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "kfcmamaene"
+    },
+    {
+      "name": "KfcModCreativeTab",
+      "type": "tab",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kfc_mod_creative_tab"
     }
   ],
   "variable_elements": [],
@@ -321,6 +329,7 @@
       "block.eye_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
       "item.eye_mod.sachet": "Sachet",
       "block.kfc_mod.pepsimeilleurquecoca": "Pepsimeilleurquecoca",
+      "itemGroup.tabkfc_mod_creative_tab": "Kfc Mod",
       "item.kfc_mod.tenders": "Tenders",
       "item.kfc_mod.salade": "Salade",
       "item.kfc_mod.colonel": "Colonel",

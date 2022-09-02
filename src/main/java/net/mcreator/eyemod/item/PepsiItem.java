@@ -8,13 +8,13 @@ import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.eyemod.itemgroup.KfcModCreativeTabItemGroup;
 import net.mcreator.eyemod.KfcModModElements;
 
 @KfcModModElements.ModElement.Tag
@@ -33,7 +33,7 @@ public class PepsiItem extends KfcModModElements.ModElement {
 
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(KfcModCreativeTabItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(4).saturation(0.3f).setAlwaysEdible().build()));
 			setRegistryName("pepsi");
 		}

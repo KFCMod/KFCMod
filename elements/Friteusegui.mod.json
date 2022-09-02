@@ -20,17 +20,17 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 168,
-          "y": 98
+          "x": 141,
+          "y": 89
         }
       },
       {
         "type": "outputslot",
         "data": {
-          "id": 2,
+          "id": 3,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
+          "name": "Slot #3",
           "x": 258,
           "y": 80
         }
@@ -46,20 +46,57 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
           "x": 168,
-          "y": 62
+          "y": 53
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "friteuse",
+          "text": "Friteuse",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "friteuse",
+          "name": "Friteuse",
           "x": 132,
           "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 195,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Inventaire",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Inventaire",
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bubble0.png",
+          "use1Xscale": true,
+          "name": "bubble0.png",
+          "x": 159,
+          "y": 71
         }
       }
     ],
